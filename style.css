@@ -46,10 +46,19 @@ body {
 }
 
 .logo {
-  width: 200px !important;  /* Increase width */
-  height: auto !important;  /* Keep aspect ratio */
-  max-width: none !important; /* Remove any max-width limits */
-  display: block; /* Helps prevent inline shrinking */
+  width: 200px !important;
+  height: auto !important;
+  max-width: none !important;
+  display: block;
+  padding: 8px 12px;
+  background-color: rgba(255, 255, 255, 0.85); /* light semi-transparent */
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.logo:hover {
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 /* Optional: Placeholder for nav */
