@@ -46,7 +46,10 @@ body {
 }
 
 .logo {
-  height: 300px;
+  width: 200px !important;  /* Increase width */
+  height: auto !important;  /* Keep aspect ratio */
+  max-width: none !important; /* Remove any max-width limits */
+  display: block; /* Helps prevent inline shrinking */
 }
 
 /* Optional: Placeholder for nav */
